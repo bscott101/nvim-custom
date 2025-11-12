@@ -1,7 +1,7 @@
 vim.g.mapleader = " "
 
 local function map(mode, lhs, rhs)
-  vim.keymap.set(mode, lhs, rhs, { silent = true })
+	vim.keymap.set(mode, lhs, rhs, { silent = true })
 end
 
 -- Save
@@ -35,6 +35,7 @@ map("n", "<C-Down>", "<C-w>-")
 
 -- terminals
 vim.keymap.set("n", "<leader>ht", [[<cmd>split | term<cr>A]], { desc = "Open terminal in horizontal split" })
+vim.keymap.set("t", "<Esc>", "<C-\\><C-n>", { desc = "Exit terminal mode" })
 
 -- theme picker
 vim.keymap.set("n", "<leader>tt", "<cmd>Themery<cr>", { desc = "Theme Selection" })
