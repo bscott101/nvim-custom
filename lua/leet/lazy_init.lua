@@ -14,7 +14,8 @@ vim.opt.rtp:prepend(lazypath)
 require("lazy").setup({
     spec = {
       {import = "leet.lazy"},
-      {import = "leet.lazy.lsp"}
+      {import = "leet.lazy.lsp"},
+      {import = "leet.lazy.themes"}
     },
     checker = {
       enabled = true,
