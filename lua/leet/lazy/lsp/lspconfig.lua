@@ -13,10 +13,13 @@ return {
 					vim.lsp.buf.signature_help({ focus = false, silent = true, max_height = 7, border = "single" })
 				end,
 			})
+			vim.diagnostic.config({
+				virtual_text = true,
+				signs = true,
+			})
 		end,
 	},
 	{
 		"hrsh7th/cmp-nvim-lsp-signature-help",
 	},
 }
-
