@@ -46,3 +46,5 @@ end, { desc = "Copy file path to clipboard" })
 
 vim.keymap.set("n", "<leader>tt", "<CMD>split | terminal<CR>", { desc = "Create Horizontal terminal window" })
 vim.keymap.set("n", "<leader>tv", "<CMD>vpslit | terminal<CR>", { desc = "Create vertical terminal window" })
+
+vim.keymap.set("t", "<esc>", [[<C-\><C-n>]], { desc = "Exit terminal into nvim mode" })
