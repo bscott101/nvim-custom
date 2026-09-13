@@ -54,7 +54,7 @@ return {
 				},
 				lsp = {
 					progress = {
-						enabled = true,
+						enabled = false,
 					},
 					-- override markdown rendering so that **cmp** and other plugins use **Treesitter**
 					override = {
@@ -63,10 +63,10 @@ return {
 						["cmp.entry.get_documentation"] = true, -- requires hrsh7th/nvim-cmp
 					},
 					signature = {
-						auto_open = { enabled = true }, -- disable auto signature help on insert mode
+						auto_open = { enabled = false }, -- disable auto signature help on insert mode
 					},
 					hover = {
-						enabled = true,
+						enabled = false,
 						silent = true,
 					},
 				},
@@ -92,7 +92,7 @@ return {
 					checker = true,
 				},
 				popupmenu = {
-					enabled = true,
+					enabled = false,
 					backend = "nui",
 				},
 				signature = {

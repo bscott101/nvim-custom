@@ -191,13 +191,7 @@ return {
 			},
 
 			-- Other Utils
-			{
-				"<leader>th",
-				function()
-					require("snacks").picker.colorschemes({ layout = "ivy" })
-				end,
-				desc = "Pick Color Schemes",
-			},
+			--{ "<leader>th", function() require("snacks").picker.colorschemes({ layout = "ivy" }) end, desc = "Pick Color Schemes", },
 			{
 				"<leader>vh",
 				function()
